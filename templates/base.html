@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    {% block head %}
+        <title>My Awesome Blog</title>
+    {% endblock head %}
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/syntax.css') }}"/>
+
+    <!-- Atom Feed -->
+    <link href="{{ url_for('feed') }}"
+      rel="alternate"
+      title="Recent Changes"
+      type="application/atom+xml">
+</head>
+<body>
+
+{% block content %}{% endblock content %}
+
+</body>
+</html>
