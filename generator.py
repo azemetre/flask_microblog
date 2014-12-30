@@ -11,7 +11,7 @@ import yaml
 
 
 FREEZER_BASE_URL = 'http://azemetre.me'
-FREEZER_DESTINATION_IGNORE =['.git*', ]
+FREEZER_DESTINATION_IGNORE =['.git*', 'CNAME']
 POSTS_FILE_EXTENSION = '.md'
 
 
