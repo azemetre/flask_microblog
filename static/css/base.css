@@ -1,27 +1,35 @@
+@import url('http://fonts.googleapis.com/css?family=Overlock|Lora');
 body {
+    background-color: #ecf6f7;
     text-align: center;
     letter-spacing: 0.01em;
-    font-family: verdana, helvetica, sans-serif;
 }
-
 #container { margin: 50px auto 10px auto; }
-
-h1, h2 {
-    font-family: Georgia, serif;
-    font-weight: normal;
+h1 {
+    color: #35777c;
+    font-family: 'Overlock', arial, serif;
+    font-size: 42px;
+    line-height: 42px;
+    font-weight: bold;
     letter-spacing: -0.075em;
 }
-
-h1 { font-size: 40px; }
-
 a {
+    color: #35777c;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 15px 0;
+    padding: 0;
     text-decoration: none;
-    color: #FF3366;
     padding-bottom: 2px;
+    -webkit-transition: 0.20s ease-in-out;
+    -moz-transition: 0.20s ease-in-out;
+    -ms-transition: 0.20s ease-in-out;
+    -o-transition: 0.20s ease-in-out;
+    transition: 0.20s ease-in-out;
 }
-
 a:hover {
-    color: #FF3366;
+    color: #ff69b4;
     border-color: #999999;
     border-width: 0px 0px 1px 0px;
     border-style: dotted;
