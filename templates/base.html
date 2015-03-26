@@ -11,9 +11,12 @@
       rel="alternate"
       title="Recent Changes"
       type="application/atom+xml">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename = 'img/pinny.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ url_for('static', filename = 'img/pinny.ico') }}" type="image/x-icon">
     {% block head %}
-        <title>Aaron's Blog</title>
-    {% endblock head %}
+    <title>Aaron's Blog</title>
+    {% endblock %}
 </head>
 <body>
 
