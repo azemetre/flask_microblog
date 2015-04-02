@@ -1,19 +1,14 @@
 import os
-import sys
 import collections
 
 from flask import Flask, render_template, url_for, abort, request
-from flask.ext.frozen import Freezer
 from werkzeug import cached_property
 from werkzeug.contrib.atom import AtomFeed
 import markdown
 import yaml
 
 
-FREEZER_BASE_URL = 'http://azemetre.me'
-FREEZER_DESTINATION_IGNORE =['.git*', 'CNAME']
 POSTS_FILE_EXTENSION = '.md'
-
 
 class SortedDict(collections.MutableMapping):
     def __init__(self, items=None, key=None, reverse=False):
@@ -116,7 +111,6 @@ class Post(object):
 app = Flask(__name__)
 app.config.from_object(__name__)
 blog = Blog(app, root_dir='posts')
-freezer = Freezer(app)
 
 
 @app.template_filter('date')
@@ -159,8 +153,5 @@ def feed():
 
 
 if __name__ == '__main__':
-    if len(sys.argv) > 1 and sys.argv[1] == 'build':
-        freezer.freeze()
-    else:
-        post_files = [post.filepath for post in blog.posts]
-        app.run(port=8000, debug=True, extra_files=post_files)
+    post_files = [post.filepath for post in blog.posts]
+    app.run(port=8000, debug=True, extra_files=post_files)
