@@ -6,6 +6,7 @@
     <link href='http://fonts.googleapis.com/css?family=Overlock|Lora' rel='stylesheet' type='text/css'>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/syntax.css') }}"/>
     <!-- Atom Feed -->
     <link href="{{ url_for('feed') }}"
       rel="alternate"
@@ -20,7 +21,14 @@
 </head>
 <body>
 
-{% block content %}{% endblock content %}
+    {% block content %}{% endblock content %}
 
+    <footer>
+        <div id="footer">
+            <p id="ft-p">
+                This blog was created using <a class="ft-link" href="http://flask.pocoo.org/">Flask</a>. If you are interested in how this website was created please visit the <a class="ft-link" href="https://github.com/azemetre/flask_microblog">github page</a>.
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
