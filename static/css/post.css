@@ -65,12 +65,36 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -ms-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
 }
 img:hover {
     border-color: rgba(53,119,124,.75);
+    border-radius: 20px;
+}
+.codehilite {
+    width: 500px;
+    background-color: white;
+    text-align: left;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #FFFFFF;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+.codehilite:hover {
+    border-color: rgba(53,119,124,.75);
+    border-radius: 20px;
+}
+.codehilite pre {
+    padding: 10px 10px 10px 10px;
 }

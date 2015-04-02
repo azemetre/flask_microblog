@@ -10,3 +10,14 @@
     color: #666666;
     padding-right: 10px;
 }
+#posts span#author {
+    width: 12em;
+    font-size: 12px;
+    vertical-align: middle;
+    text-align: right;
+    color: #666666;
+    padding-right: 10px;
+}
+#posts span#author a#author {
+    font-size: 12px;
+}

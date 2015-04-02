@@ -34,3 +34,36 @@ a:hover {
     border-width: 0px 0px 1px 0px;
     border-style: dotted;
 }
+footer #footer {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+footer #footer p#ft-p {
+    background-color: #35777c;
+    color: #ecf6f7;
+    font-family: 'Overlock', arial, serif;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: lowercase;
+    text-align: center;
+    display: inline;
+    border: 1px solid #2d666a;
+    padding: 10px;
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -ms-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
+footer #footer p#ft-p:hover {
+    background-color: #4caab2;
+    border-radius: 3px 3px 3px 3px;
+}
+a.ft-link {
+    color: #ff69b4;
+    font-size: 12px;
+}
+a.ft-link:hover {
+    color: #ecf6f7;
+    font-size: 14px;
+}
